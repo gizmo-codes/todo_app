@@ -62,3 +62,12 @@ group :development do
   gem "error_highlight", ">= 0.4.0", platforms: [:ruby]
 end
 
+group :deelopement, :test do
+  # Use RSpec for testing
+  gem "rspec-rails"
+end
+
+group :test do
+  # Use Capybara for testing
+  gem "capybara"
+end
