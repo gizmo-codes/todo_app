@@ -9,4 +9,8 @@ Rails.application.routes.draw do
   get "/" => "todos#index"
   # Equivalent to:
   # root to: "todos#index"
+
+  # Defines the "todos" resources routes
+  # This then constricts it to only include the additional routes we want
+  resources :todos, only: [:index, :new, :create]
 end

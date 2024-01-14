@@ -12,6 +12,16 @@
 
   <body>
     <h1>Todos</h1>
+    <!-- rails resolves the new_todo_path route to todos/new -->
+    <%= link_to "Add a new todo", new_todo_path %>
+
+    <ul class="todos">
+      <% @todos.each do |todo| %>
+        <li class="todo">
+          <%= todo.title %>
+        </li>
+      <% end %>
+    </ul>
     <%= yield %>
   </body>
 </html>

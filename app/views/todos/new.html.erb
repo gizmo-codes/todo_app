@@ -1,0 +1,6 @@
+<!-- https://guides.rubyonrails.org/form_helpers.html -->
+<%= form_for @todo do |form| %>
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+    <%= form.button "Submit"%>
+<% end %>
